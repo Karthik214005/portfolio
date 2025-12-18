@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>N KARTHIKEYA | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg: #0f172a; --accent: #38bdf8; --text-main: #e5e7eb; --text-muted: #9ca3af; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #020617; color: var(--text-main); min-height: 100vh; }
+    .page { max-width: 1120px; margin: 0 auto; padding: 24px 16px 40px; }
+    header { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-avatar { width: 44px; height: 44px; border-radius: 16px; display: flex; align-items: center; justify-content: center; background: #0ea5e9; color: #fff; font-weight: 700; font-size: 20px; }
+    .brand-text h1 { font-size: 22px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .brand-text span { font-size: 12px; color: var(--text-muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; }
+    nav button { background: transparent; border: 1px solid #1f2937; color: var(--text-muted); padding: 7px 12px; font-size: 12px; border-radius: 999px; cursor: pointer; transition: all 0.2s ease; }
+    nav button:hover, nav button.active { border-color: var(--accent); color: var(--accent); }
+    .layout { display: grid; grid-template-columns: 2fr 1.3fr; gap: 22px; }
+    @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+    .card { background: #111827; border-radius: 18px; border: 1px solid #1f2937; padding: 18px; position: relative; }
+    .hero-heading { font-size: 26px; margin-bottom: 6px; }
+    .hero-subtitle { color: var(--accent); font-size: 13px; text-transform: uppercase; margin-bottom: 10px; }
+    .hero-text { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-muted); margin-bottom: 16px; }
+    .hero-pill { padding: 4px 9px; border-radius: 999px; background: #0b1120; border: 1px solid #1f2937; display: inline-flex; align-items: center; gap: 6px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn-primary, .btn-ghost { border-radius: 999px; font-size: 13px; padding: 8px 14px; border: 1px solid transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; transition: all 0.2s ease; }
+    .btn-primary { background: linear-gradient(135deg, #0ea5e9, #22c55e); color: #0b1120; font-weight: 600; }
+    .btn-primary:hover { opacity: 0.95; }
+    .btn-ghost { background: #0b1120; border-color: #1f2937; color: var(--text-muted); }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .pill { border-radius: 999px; font-size: 11px; padding: 4px 9px; border: 1px solid #1f2937; background: #0b1120; color: var(--text-muted); }
+    .section-title { font-size: 15px; margin-bottom: 6px; }
+    .section-subtitle { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+    .timeline { display: flex; flex-direction: column; gap: 10px; }
+    .timeline-item { padding: 10px 12px; border-radius: 12px; background: #0b1120; border: 1px solid #1f2937; font-size: 13px; }
+    .timeline-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+    .timeline-role { font-weight: 600; }
+    .timeline-meta { font-size: 11px; color: var(--text-muted); }
+    .timeline-body { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
+    .chip { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: rgba(56, 189, 248, 0.15); color: #e0f2fe; display: inline-block; margin-top: 6px; margin-right: 6px; }
+    .footer { margin-top: 20px; font-size: 11px; color: var(--text-muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="brand-avatar">NK</div>
+        <div class="brand-text">
+          <h1>N KARTHIKEYA</h1>
+          <span>Data Science & AI Portfolio</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-btn active">About</button>
+        <button class="nav-btn">Projects</button>
+        <button class="nav-btn">Experience</button>
+        <button class="nav-btn">Contact</button>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <div class="hero-subtitle">Computer Science · AI & Data Science</div>
+        <h2 class="hero-heading">Turning data into decisions.</h2>
+        <p class="hero-text">CS undergraduate specializing in AI and Data Science with hands-on experience in Python, data analysis, and machine learning. Seeking entry-level opportunities to apply technical skills in data-driven solutions.</p>
+        <div class="hero-meta">
+          <span class="hero-pill"><strong>Location:</strong> Rajahmundry, AP</span>
+          <span class="hero-pill"><strong>Status:</strong> Open to roles</span>
+        </div>
+        <div class="hero-actions">
+          <a href="mailto:karthik098764@gmail.com" class="btn-primary">Contact Me</a>
+          <a href="https://linkedin.com/in/karthik-karthik-aa70702b9" target="_blank" class="btn-ghost">LinkedIn</a>
+        </div>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">EDA</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Data Cleaning</span>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="section-title">Quick Summary</div>
+        <div class="section-subtitle">Skills & interests at a glance.</div>
+        <div style="margin-top: 14px;">
+          <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
+            <strong style="color: var(--text-main);">Languages:</strong> Telugu (Native), English (Fluent), Hindi (Basic)
+          </div>
+          <div style="font-size: 12px; color: var(--text-muted);">
+            <strong style="color: var(--text-main);">Interests:</strong> Gaming, Films, Data Science
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="layout" style="margin-top: 22px;">
+      <section class="card">
+        <div class="section-title">Projects</div>
+        <div class="section-subtitle">Data & AI work.</div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-role">Customer Survey Data Analysis</div>
+              <div class="timeline-meta">Data Science Internship</div>
+            </div>
+            <div class="timeline-body">Performed EDA and data cleaning on 3,200+ customer survey records. Identified key patterns to support business decisions.</div>
+            <span class="chip">EDA</span><span class="chip">Data Cleaning</span>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div class="timeline-role">Emotion Detection using ML</div>
+              <div class="timeline-meta">Machine Learning</div>
+            </div>
+            <div class="timeline-body">Built ML classification model using multi-modal features. Evaluated with appropriate metrics.</div>
+            <span class="chip">Python</span><span class="chip">ML</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-title">Contact & Links</div>
+        <div class="section-subtitle">Get in touch.</div>
+        <div style="font-size: 12px; color: var(--text-muted); margin-top: 10px; line-height: 1.8;">
+          <strong style="color: var(--text-main);">Email:</strong> karthik098764@gmail.com<br>
+          <strong style="color: var(--text-main);">Phone:</strong> +91 9133688650<br>
+          <strong style="color: var(--text-main);">LinkedIn:</strong> <a href="https://linkedin.com/in/karthik-karthik-aa70702b9" target="_blank" style="color: var(--accent); text-decoration: none;">View Profile</a>
+        </div>
+      </section>
+    </section>
+
+    <p class="footer">© N KARTHIKEYA · Portfolio · Built with HTML, CSS & JavaScript</p>
+  </div>
+  
+  <script>
+    const navBtns = document.querySelectorAll('.nav-btn');
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        navBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
